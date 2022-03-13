@@ -1,0 +1,28 @@
+@keyframes loadLogo{
+    from{
+        stroke-dashoffset: 300;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes logoUp{
+    from{
+        transform: scale(1.5) translateY(15%);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1.5) translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+}
