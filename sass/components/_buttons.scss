@@ -1,0 +1,119 @@
+@import "../abstracts/variables";
+
+.btn__resume{
+    padding: 0.5rem 1rem;
+    background-color: $lightNeon;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $darkNavyBlue;
+    transition: box-shadow 0.3s;
+    &:hover{
+        box-shadow: 0px 0px 25px -4px $lightNeon;
+    }
+}
+
+.social__link{
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: $lightish;
+    text-align: center;
+    padding-left: 20px;
+    transform: rotate(318deg) skew(199deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgb(0, 0, 0.5);
+    &::before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: -20px;
+        height: 100%;
+        width: 20px;
+        background: $darkisk;
+        transition: 0.5s;
+        transform: rotate(0deg) skewY(-45deg);
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
+        background: $darkisk;
+        transition: 0.5s;
+        transform: rotate(0deg) skewX(-45deg);
+    }
+    &:hover{
+        transform: skew(5deg) translate(20px, -50px);
+        box-shadow: -50px 50px 50px rgb(0, 0, 0.5);
+    }
+    &:hover .fa{
+        color: $white;
+    }
+    .fa{
+        font-size: 40px;
+        color: $iconDark;
+        line-height: 80px;
+        transition: 0.5s;
+        padding-right: 14px;
+    }
+}
+
+.social__item{
+    opacity: 0;
+    animation: btnSlideToLeft 1s linear forwards;
+    &:nth-child(1){
+        animation-delay: 6s;
+        &:hover .social__link{
+            background: #1f4cab;
+        }
+        &:hover .social__link::before{
+            background: #1e4cabd1;
+        }
+        &:hover .social__link::after{
+            background: #3359a7de;
+        }
+    }
+    &:nth-child(2){
+        animation-delay: 6.25s;
+        &:hover .social__link{
+            background: #00aced;
+        }
+        &:hover .social__link::before{
+            background: #097aa5;
+        }
+        &:hover .social__link::after{
+            background: #53b9e0;
+        }
+    }
+    &:nth-child(3){
+        animation-delay: 6.5s;
+        &:hover .social__link{
+            background: #141616;
+        }
+        &:hover .social__link::before{
+            background: #141616e0;
+        }
+        &:hover .social__link::after{
+            background: #262828b8;
+        }
+    }
+    &:nth-child(4){
+        animation-delay: 6.75s;
+        &:hover .social__link{
+            background: #3b5998;
+        }
+        &:hover .social__link::before{
+            background: #365492;
+        }
+        &:hover .social__link::after{
+            background: #4a69ad;
+        }
+    }
+}

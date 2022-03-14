@@ -1,3 +1,7 @@
 @import "./base/reset";
 
-@import "./layout/loader";
+@import "./layout/loader", "./layout/header";
+
+body{
+    background-color: $darkNavyBlue;
+}

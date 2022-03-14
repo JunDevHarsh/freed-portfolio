@@ -26,3 +26,47 @@
         transform: translateX(100px);
     }
 }
+
+@keyframes btnSlideToLeft {
+    from{
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes logoSlideToRight {
+    from{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes navbarSlideToBottom {
+    from{
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideToTop {
+    from{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
