@@ -8,6 +8,7 @@
     background-color: $darkNavyBlue;
     transition: transform 3s;
     transition-delay: 2.5s;
+    z-index: 100;
     &.hide{
         transform: translateY(-100%);
     }
