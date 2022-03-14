@@ -1,0 +1,116 @@
+@import "../abstracts/variables", "../abstracts/animations";
+
+@import "../base/reset";
+
+@import "../components/buttons";
+
+.header{
+    display: none;
+    background-color: $darkNavyBlue;
+    &.show{
+        display: block;
+    }
+    .header__navbar{
+        max-width: 75rem;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            opacity: 0;
+            animation: logoSlideToRight 1s 4s linear forwards;
+            a svg{
+                fill: transparent;
+                stroke: $lightNeon;
+                stroke-width: 3px;
+                transition: fill 0.5s;
+                &:hover{
+                    fill: #64ffda47;
+                }
+                text{
+                    fill: $lightNeon;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    stroke-width: 0;
+                }
+            }
+        }
+        .navbar__menu{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            .navbar__menu_item{
+                opacity: 0;
+                animation: navbarSlideToBottom 1s 4s linear forwards;
+                &:nth-child(2){
+                    animation: navbarSlideToBottom 1s 4.5s linear forwards;
+                }
+                .navbar__menu_link{
+                    color: $fadeWhite;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    margin: 0 1rem;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $lightNeon;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .btn.btn__resume{
+                opacity: 0;
+                animation: btnSlideToLeft 1s 4.75s linear forwards;
+            }
+        }
+    }
+    .header__container{
+        max-width: 75rem;
+        margin: 0 auto;
+        padding: 8rem 2rem 1rem;
+        opacity: 0;
+        animation: slideToTop 1s 5.75s linear forwards;
+        .title__1{
+            font-size: 1.25rem;
+            letter-spacing: 0.25px;
+            font-weight: 500;
+            color: $lightNeon;
+        }
+        .title__2{
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin: 1.5rem 0;
+            color: $white;
+        }
+        .title__3{
+            font-size: 3rem;
+            color: $fadeWhite;
+            letter-spacing: 1px;
+        }
+        .title__text{
+            font-size: 1rem;
+            letter-spacing: 1px;
+            line-height: 2;
+            width: 50%;
+            color: $fadeWhite;
+            margin-top: 2rem;
+        }
+        .social__container{
+            position: relative;
+            .social__list{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(50%, -50%);
+                display: flex;
+                margin: 0;
+                padding: 0;
+                margin-top: 5rem;
+                .social__item{
+                    list-style: none;
+                    margin: 0 40px;
+                }
+            }
+        }  
+    }
+}
