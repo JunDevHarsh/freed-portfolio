@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
     <title>Freed | Harsh</title>
     <script src="./js/script.js" defer></script>
 </head>
+
 <body>
 
     <div class="loader__container" id="loaderContent">
@@ -29,13 +33,13 @@
                 <a href="#" class="header__logo_link">
                     <svg height="50" width="50">
                         <polygon points="25,5 5,15 5,35 25,45 45,35 45,15"></polygon>
-                          <text x="16" y="33">H</text>
+                        <text x="16" y="33">H</text>
                     </svg>
                 </a>
             </h1>
             <ul class="navbar__menu">
                 <li class="navbar__menu_item">
-                    <a href="#" class="navbar__menu_link">About</a>
+                    <a href="#about" class="navbar__menu_link">About</a>
                 </li>
                 <li class="navbar__menu_item">
                     <a href="#" class="navbar__menu_link">Projects</a>
@@ -47,7 +51,8 @@
             <h2 class="title__1">Hello world! My name is</h2>
             <h2 class="title__2">Harshdeep Singh</h2>
             <h3 class="title__3">Self-taught Front-End Developer</h3>
-            <p class="title__text">I am a front-end web developer, trying to build some unique and user friendly wesbites and keep myself involve in the world of tricky-tech.</p>
+            <p class="title__text">I am a front-end web developer, trying to build some unique and user friendly
+                wesbites and keep myself involve in the world of tricky-tech.</p>
             <div class="social__container">
                 <ul class="social__list">
                     <li class="social__item">
@@ -66,12 +71,55 @@
             </div>
         </section>
     </header>
+    <section class="about__section">
+        <h2 class="about__title" id="about">About Me</h2>
+        <p class="about__text">My name is Harsh, trying to teach myself how to deal with the coding challenges. Along
+            with this, I am self-taught front-end web developer and want to enhance my skills in the tech industry. Here
+            is my journey of how I fell into coding world.</p>
+        <div class="timeline">
+            <div class="timeline__container left">
+                <div class="timeline__content">
+                    <span>2018-21</span>
+                    <h3 class="timeline__content_title"><span class="material-icons">&#xe80c;</span>Bachelor's In Computer Application</h3>
+                    <span>CGPA - 7.42</span>
+                    <p class="timeline__content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet reiciendis facere
+                        libero
+                        nihil tempora quod optio eligendi quam, beatae perferendis iusto perspiciatis dolore, id
+                        architecto!
+                        Quae impedit eveniet tempore!</p>
+                </div>
+            </div>
+            <div class="timeline__container right">
+                <div class="timeline__content">
+                    <span>2020-21</span>
+                    <h3 class="timeline__content_title"><span class="material-icons">&#xebc5;</span>Market Ananlysis</h3>
+                    <p class="timeline__content_text">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea
+                        mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
+                        iusto
+                        primis ea eam.</p>
+                </div>
+            </div>
+            <div class="timeline__container left">
+                <div class="timeline__content">
+                    <span>2021-current</span>
+                    <h3 class="timeline__content_title"><span class="material-icons">&#xe86f;</span>Front-End Web Development</h3>
+                    <p class="timeline__content_text">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim
+                        ea
+                        mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
+                        iusto
+                        primis ea eam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         let loaderElement = document.getElementById('logoText');
         loaderElement.addEventListener('animationend', () => {
             document.getElementById('loaderContent').classList.add('hide');
-            document.querySelector('.header').classList.add('show');
-        });
+        }
+        );
     </script>
 </body>
+
 </html>
