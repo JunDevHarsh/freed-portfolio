@@ -5,11 +5,7 @@
 @import "../components/buttons";
 
 .header{
-    display: none;
     background-color: $darkNavyBlue;
-    &.show{
-        display: block;
-    }
     .header__navbar{
         max-width: 75rem;
         margin: 0 auto;
@@ -19,7 +15,7 @@
         justify-content: space-between;
         h1{
             opacity: 0;
-            animation: logoSlideToRight 1s 4s linear forwards;
+            animation: logoSlideToRight 1s 6.5s linear forwards;
             a svg{
                 fill: transparent;
                 stroke: $lightNeon;
@@ -42,9 +38,9 @@
             list-style: none;
             .navbar__menu_item{
                 opacity: 0;
-                animation: navbarSlideToBottom 1s 4s linear forwards;
+                animation: navbarSlideToBottom 1s 6.5s linear forwards;
                 &:nth-child(2){
-                    animation: navbarSlideToBottom 1s 4.5s linear forwards;
+                    animation: navbarSlideToBottom 1s 6.75s linear forwards;
                 }
                 .navbar__menu_link{
                     color: $fadeWhite;
@@ -60,7 +56,7 @@
             }
             .btn.btn__resume{
                 opacity: 0;
-                animation: btnSlideToLeft 1s 4.75s linear forwards;
+                animation: btnSlideToLeft 1s 6.75s linear forwards;
             }
         }
     }
@@ -69,7 +65,7 @@
         margin: 0 auto;
         padding: 8rem 2rem 1rem;
         opacity: 0;
-        animation: slideToTop 1s 5.75s linear forwards;
+        animation: slideToTop 1s 6.75s linear forwards;
         .title__1{
             font-size: 1.25rem;
             letter-spacing: 0.25px;

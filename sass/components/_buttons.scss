@@ -69,7 +69,7 @@
     opacity: 0;
     animation: btnSlideToLeft 1s linear forwards;
     &:nth-child(1){
-        animation-delay: 6s;
+        animation-delay: 7s;
         &:hover .social__link{
             background: #1f4cab;
         }
@@ -81,7 +81,7 @@
         }
     }
     &:nth-child(2){
-        animation-delay: 6.25s;
+        animation-delay: 7.25s;
         &:hover .social__link{
             background: #00aced;
         }
@@ -93,7 +93,7 @@
         }
     }
     &:nth-child(3){
-        animation-delay: 6.5s;
+        animation-delay: 7.5s;
         &:hover .social__link{
             background: #141616;
         }
@@ -105,7 +105,7 @@
         }
     }
     &:nth-child(4){
-        animation-delay: 6.75s;
+        animation-delay: 7.75s;
         &:hover .social__link{
             background: #3b5998;
         }
